@@ -1,0 +1,52 @@
+nav img { 
+height: 40px;
+}
+
+#hero {
+background-image: url("img/hero.jpg");
+background-size: cover;
+padding: 400px 0px;   
+}
+
+section {
+padding-top: 70px;   
+}
+
+
+.carousel-caption {
+background-color: darkgray;  
+}
+
+.carousel-item  {
+height: 600px;
+}
+
+#buy_now {
+padding: 150px 0px;
+}
+
+#some_products img {
+height: 400px;
+}
+
+.center {
+margin-left: auto;
+margin-right: auto;
+width: 1000px;
+font-size: 40px;
+border: 1px solid black;
+padding: 10px;
+}
+
+.center td {
+font-size: 20px;
+}
+
+#welcome {
+font-size: 20px;
+padding-bottom: 50px;
+}
+
+#special {
+height: 400px;
+}

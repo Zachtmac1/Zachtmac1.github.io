@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Print Wars Home Page</title>
+    <title>Print Wars FAQ Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS-->
@@ -16,6 +16,7 @@
 
 <body>
 
+    <!-- Search functionality -->
     <section>
         <div class="container">
 
@@ -40,65 +41,34 @@
             </nav>
 	</div>
     </section>
-    <section id="welcome">
-	<div class="col text-center">	
-	    <p>Welcome to Print Wars! This shop is filled with wonderfully intricate pieces that would fit great in any collection.</p>
-	    <p> From prop replicas to a custom ordering service, this shop has it all. There are even amazing bundles tailored to help you save money!</p>
-	</div>
-    </section>
-    <section class="bg-light" id="some_products">
-	<div class="container">
-	    <h2>Some of Our Products</h2>
-	    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="5000">
-            <div class="carousel-inner">
-                <div class="carousel-item active" id="special">
-                    <img class="d-block w-100" src="img/lightsaber.jpg" alt="Lightsaber">
-                    <div class="carousel-caption">
-                        <h5>Obi-Wan's Third Lightsaber</h5>
-                    </div>
-                </div>
-                <div class="carousel-item" id="special">
-                    <img class="d-block w-100" src="img/vader.jpg" alt="Darth Vader Helmet">
-                    <div class="carousel-caption">
-                        <h5>Darth Vader's Menacing Helmet</h5>
-                    </div>
-                </div>
-                <div class="carousel-item" id="special">
-                    <img class="d-block w-100" src="img/table.jpg" alt="Table Mount">
-                    <div class="carousel-caption">
-                        <h5>Table Mount</h5>
-                    </div>
-                </div>
-		<a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-	</div>
-    </section>
+
     <section>
-	<div class="container">
-            <div class="row">
-                <!-- column 1 -->
-                <div class="col-lg-5">
-		    <img class="rounded img-fluid" src="img/extra.jpg" alt="3d Printer">
-		</div>
-                <!-- column 2 -->
-                <div class="col-lg-5">
-		    <h2>What Print Wars Offers:</h2>
-		    <p>Print Wars goes above and beyond to provide good products with the utmost convenience.</p>
-		    <ul>
-		        <li>Great products</li>
-			<li>Custom order service</li>
-			<li>Easy-to-navigate website for fans of all levels of experience</li>
-			<li>Helpful filters</li>
-			<li>An abundance of relevant information</li>
-		    </ul>
-		</div>
-            </div>
+	<div class="center" align="center">
+	<table>
+ 	    <tr>
+		<th colspan="2">Frequently Asked Questions:</th>
+	    </tr>
+	    <tr>
+  		<th>Question:</th>
+  		<th>Answer:</th>
+	    </tr>
+	    <tr>
+  		<td>Are the wall and table mounts compatible with all lightsabers?</td>
+  		<td>Yes! They are able to be used with any lightsaber that fits the mount and weighs less than 7 pounds.</td>
+	    </tr>
+	    <tr>
+  		<td>How much does the custom service cost?</td>
+  		<td>There is no one defined price as that changes based upon the amount of time and materials used.</td>
+	    </tr>
+	    <tr>
+  		<td>How long will the bundles be available?</td>
+  		<td>The bundles are changed out every month, so check back regularly to catch the best deals!</td>
+	    </tr>
+	    <tr>
+  		<td>Are other lightsabers besides Obi-Wan's avilable for purchase?</td>
+  		<td>New lightsabers will be added periodically!</td>
+	    </tr>
+	</table>
 	</div>
     </section>
     <section class="footer">
@@ -154,7 +124,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 
-	    
+	    <script>
+        	//Enable tooltips everywhere in the page
+        	$(function() {
+            	    $('[data-toggle="tooltip"]').tooltip()
+        	})
+    	    </script>
 
 
 </body>

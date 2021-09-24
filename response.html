@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Print Wars Response Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    
+    <!-- Do not modify h1 or p elements -->
+    
+    <h1><span id="name_span"></span>, Thank you for choosing to do business with Print Wars!</h1>
+    <p>You have purchased the <span id="product_span"></span>. 
+        Your items will be shipped to <span id="address_span"></span> using <span id="shipping_span"></span> shipping.</p>
+    <p>Additional information and a tracking number will be sent to <span id="email_span"></span>.</p>
+
+
+
+    <!-- JavaScript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+    <script>
+        
+        window.onload = function() {
+            var params = new window.URLSearchParams(window.location.search);
+            
+            //assign query string parameters pet, first_name, volunteer, and phone to local variables with same name
+            var full_name = params.get('full_name');
+	    var product_bundle = params.get('product_bundle');
+	    var address = params.get('address');
+	    var shipping_type = params.get('shipping_type');
+	    var your_email = params.get('your_email');
+	    
+            
+            
+            $("#name_span").text(`${full_name}`);
+            $("#product_span").text(`${product_bundle}`);
+	    $("#address_span").text(`${address}`);
+            $("#shipping_span").text(`${shipping_type}`);
+            $("#email_span").text(`${your_email}`);
+            
+
+        };
+    </script>
+
+</body></html>

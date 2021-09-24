@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Print Wars Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Search functionality -->
+    <section>
+        <div class="container">
+
+            <!-- product searchbox row -->
+            <nav class="navbar navbar-light navbar-expand-lg shadow-sm bg-white fixed-top">
+                <a class="navbar-brand" href="#">
+            	    <img src="img/icon.png" alt="icon">
+            	    Print Wars
+        	</a>
+		<button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+            	    <span class="navbar-toggler-icon"></span>
+        	</button>
+		<div id="navbarSections" class="collapse navbar-collapse">
+            	     	<ul class="navbar-nav ml-auto">
+                	    <li class="nav-item"><a href="#hero" class="nav-link">Top</a></li>
+                	    <li class="nav-item"><a href="#savings" class="nav-link">Savings</a></li>
+                	    <li class="nav-item"><a href="#bundles" class="nav-link">Offers</a></li>
+			    <li class="nav-item"><a href="#buy_now" class="nav-link">Buy Now!</a></li>
+            		</ul>
+        	</div>
+		<div id="navbarSupportedContent" class="collapse navbar-collapse">
+            	     	<ul class="navbar-nav ml-auto">
+                	    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                	    <li class="nav-item"><a href="landing.html" class="nav-link">Bundles</a></li>
+                	    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+			    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+            		</ul>
+        	</div>
+		<button class="btn ml-auto" data-toggle="modal" data-target="#checkout_modal">Checkout</button>
+            </nav>
+	</div>
+    </section>
+    <!-- Hero Section-->
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+            <!-- insert new div -->
+                <div class="col text-center">
+		    <h1>Bundle and Save!</h1>
+		    <p>See below for amazing opportunities to save money on great items!</p>
+		    <button type="button" class="btn ml-auto" data-toggle="modal" data-target="#buy_now_modal">Buy Now!</button>	
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="savings">
+        <div class="container">
+            <h2>Save Money Now!</h2>
+            <div class="row">
+                <!-- column 1 -->
+                <div class="col-lg-5">
+		    <img class="rounded img-fluid" src="img/money.jpg" alt="Money Saved">
+		</div>
+                <!-- column 2 -->
+                <div class="col-lg-5">
+		    <h2>How to Save by Bundling:</h2>
+		    <p>Why spend more money when you could save it or spend it on mpre prop replicas!!</p>
+		    <ol>
+		        <li>Find desired products</li>
+			<li>Add prices together</li>
+			<li>Compare to bundled version</li>
+			<li>Choose the best option</li>
+		    </ol>
+		</div>
+            </div>
+	</div>
+    </section>
+    <section id="bundles" class="bg-light">
+	<div class="container">
+	    <h2>Available Bundles</h2>
+	    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/bundle1v2.jpg" alt="First slide">
+                    <div class="carousel-caption">
+                        <h5>Lightsaber Display Bundle</h5>
+                        <p>Battle for the Republic against the sinister Sith with this force-embued bundle!</p>
+			<p>$55</p>
+			<p>Includes:</p>
+			<p>Obi-Wan's Third Lightsaber: $50</p>
+			<p>Table Mount: $10</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/bundle2v2.jpg" alt="Second slide">
+                    <div class="carousel-caption">
+                        <h5>Empire Bundle</h5>
+                        <p>Join the Dark Side with this bundle!</p>
+			<p>$150</p>
+			<p>Includes:</p>
+			<p>Darth Vader's Menacing Helmet: $100</p>
+			<p>Deathstar II: $75</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/bundle3v2.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h5>Custom Bundle</h5>
+                        <p>Customize your collection further with this bundle tailored to your liking!</p>
+			<p>Save $5 on the wall mount.</p>
+			<p>Includes:</p>
+			<p>Custom Service: $N/A</p>
+			<p>Wall Mount: $10</p>
+                    </div>
+                </div>
+		<a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+	</div>
+    </section>
+    <section id="buy_now">
+	<div class="container">
+	    <div class="row">
+		<div class="col-12 text-center">
+		    <h2>Buy Now Before the Offers Expire!</h2>
+		    <button type="button" class="btn btn-primary ml-auto" data-toggle="modal" data-target="#buy_now_modal">Buy Now!</button>
+		</div>
+	    </div>
+	</div>
+    </section> 
+    <section class="footer">
+        <div class="container text-center">
+            <p>Copyright &copy;  Print Wars</p>
+            <p>Contact: 800-123-WARS or buy@printwars.com</p>
+        </div>
+    </section>
+
+	    <!-- Checkout form modal -->
+	    <div class="modal fade" id="checkout_modal" tabindex="-1" role="dialog" aria-labelledby="modalContactLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="md-form mb-5">
+                                <label for="card_holder">Card Holder</label>
+                                <input id="card_holder" type="text" class="form-control" placeholder="Card Holder Name">
+                            </div>
+			    <div class="md-form mb-5">
+                                <label for="card_type">Card Type</label>
+                                <select name="Card Type">
+  				    <option value="Credit">Credit</option>
+  				    <option value="Debit">Debit</option>
+			        </select>
+                            </div>
+			    <div class="md-form mb-5">
+                                <label for="card_number">Card Number</label>
+                                <input id="card_number" type="text" class="form-control" placeholder="Card Number">
+                            </div>
+			    <div class="md-form mb-5">
+                                <label for="expiration_date">Expiration Date</label>
+                                <input id="expiration_date" type="date" class="form-control">
+                            </div>
+			    <div class="md-form mb-5">
+                                <label for="your_email">Your Email</label>
+                                <input id="your_email" type="email" class="form-control" placeholder="Email">
+                            </div>
+		        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	<!-- Buy Now form modal -->
+	    <div class="modal fade" id="buy_now_modal" tabindex="-1" role="dialog" aria-labelledby="modalContactLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add to cart</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+			<form role="form" id="buy_now_form" action="response.html">
+                            <div class="md-form mb-5">
+                                <label for="full_name">Full Name:</label>
+                                <input id="full_name" name="full_name" type="text" class="form-control" placeholder="John Doe">
+                            </div>
+			    <div class="md-form mb-5">
+                                <label for="product_bundle">Product Bundle</label>
+                                <select id="product_bundle" name="product_bundle">
+  				    <option value="Lightsaber Display Bundle">Lightsaber Display Bundle</option>
+  				    <option value="Empire Bundle">Empire Bundle</option>
+				    <option value="Custom Bundle">Custom Bundle</option>
+			        </select>
+                            </div>
+			    <div class="md-form mb-5">
+                                <label for="address">Address:</label>
+                                <input id="address" name="address" type="text" class="form-control" placeholder="1234 Endor Ct">
+                            </div>
+			    <div class="md-form mb-5">
+                                <label for="shipping_type">Shipping Type</label>
+                                <select id="shipping_type" name="shipping_type">
+  				    <option value="Standard">Standard</option>
+  				    <option value="Premium">Premium</option>
+				    <option value="Lightspeed">Lightspeed</option>
+			        </select>
+                            </div>
+			    <div class="md-form mb-5">
+                                <label for="your_email">Your Email:</label>
+                                <input id="your_email" name="your_email" type="email" class="form-control" placeholder="Email">
+                            </div>
+		        </div>
+                        <div class="modal-footer">
+			    <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+			</form>
+                    </div>
+                </div>
+            </div>
+    <!-- JavaScript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+	    <script>
+        	//Enable tooltips everywhere in the page
+        	$(function() {
+            	    $('[data-toggle="tooltip"]').tooltip()
+        	})
+		$(function() {
+
+            
+            $("#buy_now_form").validate({
+                rules: 
+                {
+                    //add your validation rules
+                    full_name: {
+			required: true,
+			minlength: 8
+		    },
+		    product_bundle: {
+			required: true
+		    },
+		    address: {
+			required: true
+		    },
+		    your_email: {
+			required: true,
+			minlength: 8
+		    }
+                    
+                    
+                    
+                    
+                    
+                } //end of rules     
+                    
+                
+            }); //end of validate function
+            
+            
+
+        }); //end of page load function
+    	    </script>
+
+
+</body>
+
+</html>
